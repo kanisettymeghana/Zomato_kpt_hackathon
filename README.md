@@ -1,2 +1,8 @@
 # Zomato_kpt_hackathon
-Zomato's KPT model wasn't broken — its inputs were. We built a signal improvement layer that fixes FOR bias, kitchen blindness, and merchant trust by incorporating signal improvement layer for Zomato's KPT model: IoT sensors to eliminate merchant FOR bias, POS+KDS integration to raise kitchen visibility from 10.6% → 100%, food complexity tiers for tier-specific rider dispatch, and per-merchant EWMA bias correction, without touching the model by achieving 97% error reduction on the original dataset
+Our objective was to improve the accuracy of Kitchen Prep Time (KPT) predictions by strengthening and enriching input signals beyond merchant-marked readiness, while ensuring scalability across a large merchant network.
+
+To achieve this, we enhanced the input signals by introducing:
+- IoT Shelf Sensors — Capture the exact moment food is physically ready, eliminating reliance on manual inputs
+- POS + KDS Integration — Provide a complete, real-time view of kitchen activity across all order channels
+- Food Complexity Tiers — Align dispatch timing with the actual preparation effort required for different dishes
+- Per-Merchant Bias Correction — Learn and adjust for each restaurant’s behavioral patterns over time
